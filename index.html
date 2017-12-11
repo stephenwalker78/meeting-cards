@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meeting Cards</title>
+	<!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+		<style type="text/css">
+			img {
+				background-color:pink;
+				margin:0px;
+				padding:0px;
+				float:left;
+			}
+			.blue{background-color: #5eb5d7;}
+			.green{background-color: #9db616;}
+			.yellow{background-color: #ffde02;}
+			p { text-align: center;}
+			.small{
+				width:25%;
+				height:auto;
+			}
+
+			.full{
+				width:100%;
+				padding: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<img id="crd-a" alt="" class="small blue" src="images/mtg-crd-01.png"> <img id="crd-b" alt="" class="small green" src="images/mtg-crd-02.png"> <img id="crd-c" alt="" class="small yellow" src="images/mtg-crd-03.png"> <img id="crd-d" alt="" class="small blue" src="images/mtg-crd-04.png"> <img id="crd-e" alt="" class="small green" src="images/mtg-crd-05.png"> <img id="crd-f" alt="" class="small yellow" src="images/mtg-crd-06.png"> <img id="crd-g" alt="" class="small blue" src="images/mtg-crd-07.png"> <img id="crd-h" alt="" class="small green" src="images/mtg-crd-08.png"> <img id="crd-i" alt="" class="small yellow" src="images/mtg-crd-09.png"> <img id="crd-j" alt="" class="small blue" src="images/mtg-crd-10.png"> <img id="crd-k" alt="" class="small green" src="images/mtg-crd-11.png"> <img id="crd-l" alt="" class="small yellow" src="images/mtg-crd-12.png"> <img id="crd-m" alt="" class="small blue" src="images/mtg-crd-13.png"> <img id="crd-n" alt="" class="small green" src="images/mtg-crd-14.png"> <img id="crd-o" alt="" class="small yellow" src="images/mtg-crd-15.png"> <img id="crd-p" alt="" class="small blue" src="images/mtg-crd-16.png"> 
+		<p>
+			Designed by <a href="https://twitter.com/stephenwalker78">Stephen Walker</a> at <a href="http://seethinkdo.it">See Think Do</a>, <br>inspired by the original super cards from <a href="https://www.collaborationsuperpowers.com/supercards/" target="_blank">Collaboration Superpowers</a>. 
+		</p>
+		<script>
+			$( "img" ).click(function() {
+				$( this ).toggleClass( "full" );
+				$('html, body').animate({
+					scrollTop: $(this).offset().top
+				},0);
+			});
+		</script>
+	</body>
+</html>
