@@ -56,6 +56,7 @@
 		</p>
 		<script>
 			$( "img" ).click(function() {
+				$( "img" ).not( this ).removeClass( "full" );
 				$( this ).toggleClass( "full" );
 				$('html, body').animate({
 					scrollTop: $(this).offset().top
